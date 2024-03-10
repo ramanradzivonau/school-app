@@ -29,6 +29,7 @@ export const Input: FC<InputProps> = ({ type = "text", ...props }) => {
       {type === "password" && (
         <TouchableOpacity
           onPress={() => setIsPasswordVisible((state) => !state)}
+          hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
           style={Styles.icon}
         >
           {isPasswordVisible ? <EyeOpenedIconSvg /> : <EyeClosedIconSvg />}
