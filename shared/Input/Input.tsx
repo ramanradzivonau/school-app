@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Colors } from "../tokens";
+import { Colors, Fonts, Radius } from "../tokens";
 import EyeOpenedIconSvg from "../../assets/icons/EyeOpenedIconSvg";
 import EyeClosedIconSvg from "../../assets/icons/EyeClosedIconSvg";
 
@@ -43,11 +43,11 @@ const Styles = StyleSheet.create({
   input: {
     height: 58,
     paddingHorizontal: 24,
-    borderRadius: 10,
+    borderRadius: Radius.r10,
     backgroundColor: Colors.violetDark,
     // fontFamily: 'Fira Sans',
-    fontSize: 16,
-    lineHeight: 19,
+    fontSize: Fonts.f16,
+    lineHeight: 1.2,
     color: Colors.gray,
   },
   icon: {

@@ -1,2 +1,3 @@
+export { Button } from './Button/Button';
 export { Input } from './Input/Input';
-export { Colors, Gaps, Radius } from './tokens';
+export { Colors, Fonts, Gaps, Radius } from './tokens';
